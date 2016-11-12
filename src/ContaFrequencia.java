@@ -43,7 +43,7 @@ public class ContaFrequencia {
 	
 	public static void printPalavrasTexto (Map<String, Integer> palavrasTexto) {
 		for (Entry <String, Integer> entry : palavrasTexto.entrySet()) {
-			System.out.print(entry.getKey() + " " + entry.getValue());
+			System.out.println(entry.getKey() + " " + entry.getValue());
 		}
 	}
 }
