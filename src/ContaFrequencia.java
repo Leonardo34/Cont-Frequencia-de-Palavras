@@ -4,6 +4,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 
 public class ContaFrequencia {
@@ -38,5 +39,11 @@ public class ContaFrequencia {
 			}
 		}
 		return palavrasTexto;
+	}
+	
+	public static void printPalavrasTexto (Map<String, Integer> palavrasTexto) {
+		for (Entry <String, Integer> entry : palavrasTexto.entrySet()) {
+			System.out.print(entry.getKey() + " " + entry.getValue());
+		}
 	}
 }
